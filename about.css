@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Qluintessentia&family=Roboto:wght@100;700&display=swap');
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.origin-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+#header {
+    width: 100%;
+    height: 0;
+    position: relative;
+    z-index: 999;
+}
+
+#header img {
+    position: relative;
+    top: 50px;
+    left: 15%;
+    width: 370px;
+}
+
+#header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding: 0 60px;
+    color: #fff;
+}
+
+.nav-menu li {
+    margin-left: 40px;
+    font-size: 1.985rem;
+    font-weight: bold;
+    margin-right: 70px;
+    position: relative;
+    top: -40px;
+    right: 50px;
+
+
+}
+
+.nav-menu li a {
+    color: #000;
+    font-family: 'Quintessential', 'Roboto', sans-serif;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-menu a:hover,
+.nav-menu.current a {
+    color: #b64900de;
+    text-shadow: 0 0 10px rgb(220, 82, 8), 0 0 15px rgb(220, 82, 8);
+}
+
+.nav-menu li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background: rgb(220, 82, 8);
+    /*アニメーションの指定*/
+    transition: all .4s;
+    transform: scale(0, 1);
+    /*X方向0、Y方向1*/
+    transform-origin: center top;
+    /*上部中央基点*/
+}
+
+.nav-menu.currenta::after,
+.nav-menu li a:hover::after {
+    transform: scale(1, 1);
+    /*X方向にスケール拡大*/
+}
+
+#mainvisual {
+    margin-bottom: 50px;
+}
+
+.slider {
+    position: relative;
+    z-index: 1;
+    /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+    height: 100vh;
+    /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+
+}
+
+
+.slider-item03 {
+    background: url(img/my_room3.jfif);
+}
+
+.slider-item {
+    width: 100%;
+    /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height: 100vh;
+    /*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;
+    /*背景画像をリピートしない*/
+    background-position: center;
+    /*背景画像の位置を中央に*/
+    background-size: cover;
+    /*背景画像が.slider-item全体を覆い表示*/
+    position: relative;
+
+}
+
+
+
+
+
+    
+
