@@ -471,6 +471,7 @@ img {
 .slider02 {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-left: 0;
 }
 
 .slider02 img {
@@ -696,11 +697,8 @@ img {
         font-size: 1rem;
         font-family: 'Times New Roman', Times, serif;
         line-height: 2.2em;
-        text-align: center;
+        vertical-align: baseline;
     }
-
-
-
 
     /* フッター */
 
@@ -712,20 +710,20 @@ img {
 
     #footer img {
         position: relative;
-        right: 22%;
+        right: 24%;
     }
 
     #footer small {
         position: relative;
         top: 70px;
-        left: 13%;
+        left: 10%;
 
     }
 
     /* アイコンサイズ変更 */
     .fab {
         position: relative;
-        left: -24%;
+        left: -25%;
         margin-left: 40px;
         margin-top: 20px;
     }
