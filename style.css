@@ -10,6 +10,7 @@ html {
 body {
     color: #fff;
     font-size: 0.875rem;
+    margin: 0;
 }
 
 li {
@@ -163,23 +164,25 @@ img {
     /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
     height: 100vh;
     /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background: url(img/My_room.JPG);
+    background: url(https://github.com/BECK-TIM/my_room/blob/main/img/My_room.JPG);
 
 }
 
 .slider-item02 {
-    background: url(img/Keybord.jfif);
+    background: url(https://github.com/BECK-TIM/my_room/blob/main/img/Keybord.jfif);
 
 }
 
 .slider-item03 {
-    background: url(img/my_room3.jfif);
+    background: url(https://github.com/BECK-TIM/my_room/blob/main/img/my_room3.jfif);
 }
 
 
@@ -508,6 +511,11 @@ img {
     margin-top: 20px;
 }
 
+
+
+/* -----レスポンシブデザイン-----　*/
+
+
 /* SP */
 @media (max-width:600px) {
 
@@ -681,7 +689,7 @@ img {
 
     /* 縦書き */
     .sec-title p {
-        margin-right: 49%;
+        margin-right: 50%;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
         text-orientation: upright;
